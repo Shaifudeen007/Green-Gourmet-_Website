@@ -1,0 +1,133 @@
+body {
+    font-family:poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #105e02;
+    padding: 1em 0;
+    color: white;
+    position:sticky;
+    top:0em;
+    
+
+    
+    
+    
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav h1 {
+margin: 0;
+flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+
+
+}
+nav .logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1em;
+}
+
+
+nav ul li {
+    margin-left: 1rem;
+    display: inline-block;
+
+}
+nav ul li a:hover{
+    color: black;
+    transition: .4s;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    
+}
+
+nav ul li button{
+    
+    background-color: #ffffff;
+font-weight: bold;
+    border-radius:30px;
+    color:green;
+    border: 2px solid transparent;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:20px;
+}
+
+.image-box button{
+    background-color: #105e02;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: transform .4s;
+
+}
+.image-box button:hover{
+    background-color: transparent;
+    border:2px solid black;
+    cursor: pointer;
+}
+
+
+.image-box {
+    background-color: #ffffff;
+    border: 1px solid #060505;
+    border-radius:20px;
+    box-shadow: 0 0 10px;
+    margin: 10px;
+    width: calc(25% - 20px); /* Adjust the width to fit three boxes per row */
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-box img {
+    width: 380px;
+    height: 200px;
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+}
+
+.text-content {
+    padding: 15px;
+}
+
+.text-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #333333;
+}
+
+.text-content p {
+    margin: 0 0 5px;
+    color: #666666;
+    line-height: 1.5;
+}

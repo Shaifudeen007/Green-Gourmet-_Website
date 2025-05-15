@@ -1,0 +1,130 @@
+body {
+    font-family:poppins;
+    background-color:rgb(45, 185, 14);
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #105e02;
+    padding: 1em 0;
+    color: white;
+    position:sticky;
+    top:0em;
+    box-shadow: 0 0 15px;
+    
+
+    
+    
+    
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav h1 {
+margin: 0;
+flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+
+
+}
+nav .logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1em;
+}
+
+
+nav ul li {
+    margin-left: 1rem;
+    display: inline-block;
+
+}
+nav ul li a:hover{
+    color: black;
+    transition: .4s;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    
+}
+
+nav ul li button{
+    
+    background-color: #ffffff;
+font-weight: bold;
+    border-radius:30px;
+    color:green;
+    border: 2px solid transparent;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+
+    flex-direction: row;
+}
+
+.tip {
+    background: url('download.jpeg');
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.tip p::selection{
+    background-color: magenta;
+}
+
+.tip:hover {
+    transform: scale(1.05);
+}
+
+.tip h3 {
+    margin-top: 0;
+    color: #61bbd9;
+}
+.tip p{
+    color: white;
+}
+
+.tip p::selection{
+    background-color: magenta;
+}
+.tip h3::selection{
+    background-color: magenta;
+}
+@media (max-width: 768px) {
+    .tip {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .tip {
+        flex: 1 1 100%;
+    }
+}

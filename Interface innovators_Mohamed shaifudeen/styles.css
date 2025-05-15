@@ -1,0 +1,427 @@
+body {
+    font-family:poppins;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(45, 185, 14);
+    color:black;
+    
+    
+    
+}
+
+
+header {
+    background-color: #105e02;
+    padding: 1em 0;
+    color: white;
+    position:sticky;
+    top:0em;
+    box-shadow: 0 0 15px;
+    
+
+    
+    
+    
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+    
+}
+
+nav h1 {
+margin: 0;
+flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+
+
+}
+nav .logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1em;
+}
+
+
+nav ul li {
+    margin-left: 1rem;
+    display: inline-block;
+
+}
+nav ul li a:hover{
+    color: black;
+    transition: .4s;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    
+}
+
+nav ul li button{
+    
+    background-color: #ffffff;
+font-weight: bold;
+    border-radius:30px;
+    color:green;
+    border: 2px solid transparent;
+}
+
+
+.hero {
+    background: url('backgound.jpeg') no-repeat center center/cover;
+    color:black;
+    text-align: center;
+    padding: 4em 1em;
+    width: 1500px; 
+    height:250px; 
+    object-fit: cover;
+}
+.hero h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 5s linear infinite;
+}
+.hero p::selection{
+    background-color:magenta;
+}
+.hero p{
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.featured-recipes {
+    padding: 2em 1em;
+    text-align: center;
+}
+.featured-recipes h2{
+    font-size:30px;
+}
+
+.recipes-grid {
+    display: flex;
+    justify-content: space-around;
+    width:auto;
+    flex-direction: row;
+}
+  
+
+.recipe {
+    background:url('download.jpeg');
+    backdrop-filter:blur(30px);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow:0 0 15px;
+    margin: 1em;
+    padding: 1em;
+    width:20%;
+    color: white;
+}
+
+.recipe img {
+    width:100%;
+    border-radius: 10px 10px 0 0;
+}
+.recipe button{
+    background-color: #2ee60e;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+   
+}
+.recipe button:hover{
+    background-color: transparent;
+    border:2px solid black;
+    cursor: pointer;
+    color: black;
+    
+}
+.recipe:hover{
+        box-shadow: 0 0 30px rgb(237, 237, 241);
+        transform: translate(0px,-20px);
+        
+}
+#tips h2{
+    text-align:center;
+    font-size: 30px;
+
+}
+#tips h2::selection{
+    background-color: magenta;
+}
+
+.search-filter {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.search-filter input, .search-filter select {
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.tip {
+    background: url('download.jpeg');
+    color: white;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow:0 0 15px;
+    width: calc(33% - 2em);
+    box-sizing: border-box;
+}
+
+.tips-list {
+    display: flex;
+    justify-content: space-around;
+    width:auto;
+    flex-direction: row;
+    text-align: left;
+}
+
+
+#aboutus p{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    line-height:50px;
+}
+#aboutus p::selection{
+    background-color: magenta;
+    color: rgb(0, 0, 0);
+}
+#aboutus h2{
+    font-size: 30px;
+    text-align: center;
+}
+#aboutus h2::selection{
+    background-color: magenta;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 1em;
+    padding: 1em;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius:50%;
+}
+#Research h2{
+    text-align: center;
+    font-size: 30px;
+}
+#Research h2::selection{
+    background-color: magenta;
+}
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post {
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(33% - 2em);
+    box-sizing: border-box;
+}
+.post p::selection{
+    background-color: magenta;
+}
+.post h3::selection{
+    background-color: magenta;
+}
+.post button{
+    background-color: #105e02;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.post button:hover{
+    background-color: transparent;
+    border:2px solid black;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#contact h2{
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+#contact-form label {
+    margin-top: 0.5em;
+
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #040303;
+    border-radius:10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#contact-form button {
+    padding: 0.5em 2em;
+    border: none;
+    border-radius:10px;
+    background-color:white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 1em;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 300px;
+    width: 300px;
+    padding:20px 35px;
+    background:url('download.jpeg');
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #ffffff;
+
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+     line-height: 27px;
+     margin-bottom: 25px;
+     
+}
+.card .button{
+    background-color:#105e02;
+color: white;
+text-decoration: none;
+border: 2px solid transparent;
+font-weight: bold;
+padding: 9px 22px;
+border-radius: 30px;
+transition: .4s;
+
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid #000000;
+    cursor: pointer;
+
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+slider{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.slider div img{
+margin:0 auto;
+
+}
+.slider-title{
+    text-align: center;
+    font-size: 30px;
+}
