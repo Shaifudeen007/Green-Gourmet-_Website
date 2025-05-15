@@ -1,2 +1,8 @@
 # Green-Gourmet-_Website
-###### My Green Gourmet is a vibrant food blog dedicated to promoting healthy eating through practical nutritional tips and wholesome recipes. Designed for health-conscious individuals and families, the blog offers easy-to-understand advice on balanced diets, superfoods, meal planning, and sustainable food choices. Whether you're looking to improve your lifestyle, manage your weight, or simply eat better, My Green Gourmet serves up reliable, science-backed information with a flavorful twist. Our goal is to make nutrition simple, enjoyable, and accessible for everyone.
+###### "My Green Gourmet is my very first web project, created as part of my value-added course. It's a food blog that shares simple nutritional tips to help people eat healthier every day."
+
+ "I built My Green Gourmet to make healthy eating more accessible. The goal was to combine my passion for nutrition with web development skills I learned during the course."
+
+ "Through My Green Gourmet, I aim to inspire people to make smarter food choices. It’s more than a blog — it’s a step toward a healthier lifestyle, and my proud beginning in the world of web development."
+
+ "This project taught me how to plan, design, and build a functional website with real value. It’s where creativity meets purpose — and where my journey into tech and wellness began."
